@@ -3,7 +3,7 @@
 
 # Terraform
 .terraform/
-./terraform*
+terraform*
 
 # ssh keys
 .ssh/
