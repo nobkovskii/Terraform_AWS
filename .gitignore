@@ -1,0 +1,9 @@
+# IntelliJ
+.idea/
+
+# Terraform
+.terraform/
+./terraform*
+
+# ssh keys
+.ssh/
