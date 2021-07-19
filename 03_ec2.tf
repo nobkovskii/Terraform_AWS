@@ -16,6 +16,12 @@ resource "aws_instance" "bastion" {
   key_name                = aws_key_pair.auth.key_name
   vpc_security_group_ids  = [aws_security_group.bastion_security_group.id]
   subnet_id               = aws_subnet.public_subnet.id
+
+  tags = {
+    Name = "${var.project}-Bastion"
+    Owner = var.owner
+    Project = var.project
+  }
 }
 
 # セキュアサーバ
@@ -26,4 +32,10 @@ resource "aws_instance" "private" {
   key_name                = aws_key_pair.auth.key_name
   vpc_security_group_ids  = [aws_security_group.private_security_group.id]
   subnet_id               = aws_subnet.private_subnet.id
+
+  tags = {
+    Name = "${var.project}-Private"
+    Owner = var.owner
+    Project = var.project
+  }
 }
