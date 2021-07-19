@@ -14,7 +14,7 @@ Terraformを利用して、AWSの基本的な構成を作成します。
 ```
 > ssh-keygen -t rsa
 
-Enter file in which to save the key : aws-key-pair
+Enter file in which to save the key : ./.ssh/aws-key-pair
 Enter passphrase (empty for no passphrase): Enter
 Enter same passphrase again: Enter
 ```
