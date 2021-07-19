@@ -1,15 +1,15 @@
 # How to Use
 ## About
-Terraform‚ğ—˜—p‚µ‚ÄAAWS‚ÌŠî–{“I‚È\¬‚ğì¬‚µ‚Ü‚·B
-uAWS CLIv‚ÆuTerraformv‚ÍŠù‚ÉƒCƒ“ƒXƒg[ƒ‹Ï‚İ‚Æ‚µ‚Ü‚·B
+Terraformã‚’åˆ©ç”¨ã—ã¦ã€AWSã®åŸºæœ¬çš„ãªæ§‹æˆã‚’ä½œæˆã—ã¾ã™ã€‚
+ã€ŒAWS CLIã€ã¨ã€ŒTerraformã€ã¯æ—¢ã«ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«æ¸ˆã¿ã¨ã—ã¾ã™ã€‚
 
-### “®ìŠÂ‹«
+### å‹•ä½œç’°å¢ƒ
 * Windows10 & cmd
 * Terraform v1.0.2
 * AWS CLI 2.2.20
 
-## –‘O€”õ
-Às‘O‚ÉuEC2v‚ÖƒAƒNƒZƒX‚·‚é‚½‚ß‚ÌŒ®‚ğì¬‚µ‚Ü‚·B
+## äº‹å‰æº–å‚™
+å®Ÿè¡Œå‰ã«ã€ŒEC2ã€ã¸ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹ãŸã‚ã®éµã‚’ä½œæˆã—ã¾ã™ã€‚
 
 ```
 > ssh-keygen -t rsa
@@ -30,24 +30,24 @@ Enter same passphrase again: Enter
 * terraform apply
 * terraform destroy
 
-## “®ìŠm”F
+## å‹•ä½œç¢ºèª
 
-* sshÚ‘±Šm”F(bastion)
+* sshæ¥ç¶šç¢ºèª(bastion)
   * ssh centos@[public ip] -i secret_key_path
-* ƒCƒ“ƒ^[ƒlƒbƒgÚ‘±Šm”F
+* ã‚¤ãƒ³ã‚¿ãƒ¼ãƒãƒƒãƒˆæ¥ç¶šç¢ºèª
   * sudo yum update
 
-* sshÚ‘±Šm”Fiprivatej
-  * .ssh/config ‚ğC³‚·‚é
+* sshæ¥ç¶šç¢ºèªï¼ˆprivateï¼‰
+  * .ssh/config ã‚’ä¿®æ­£ã™ã‚‹
   * ssh target
 
 
-## TravelShooting
+## Trouble Shooting
 
-* SSH ‚Å‚«‚È‚¢
-  * ”é–§Œ®‚ÌPath‚Í‚ ‚Á‚Ä‚¢‚é‚©H
-  * ”é–§Œ®‚ÌŒ ŒÀ‚Í‚ ‚Á‚Ä‚¢‚é‚©H
-  * ƒ†[ƒU–¼‚Í³‚µ‚¢‚©H
+* SSH ã§ããªã„
+  * ç§˜å¯†éµã®Pathã¯ã‚ã£ã¦ã„ã‚‹ã‹ï¼Ÿ
+  * ç§˜å¯†éµã®æ¨©é™ã¯ã‚ã£ã¦ã„ã‚‹ã‹ï¼Ÿ
+  * ãƒ¦ãƒ¼ã‚¶åã¯æ­£ã—ã„ã‹ï¼Ÿ
     * Amazon Linux : ec2-user
     * CentOs       : centos
     * Debian       : admin | root
